@@ -1,0 +1,21 @@
+{
+  "name": "doob",
+  "version": "1.0.0",
+  "description": "restful modular service",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "doob",
+    "openbook"
+  ],
+  "author": "Maz and Taimore Khan",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "knex": "^0.14.6",
+    "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
+    "winston": "^2.4.2"
+  }
+}
