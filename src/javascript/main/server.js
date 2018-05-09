@@ -1,13 +1,11 @@
-import * as Koa from 'koa';
-import * as Router from 'koa-router';
-import authenticate from './middlewares/authenticate';
+const Koa = require('koa');
+const Router = require('koa-router');
+const config = require('./config/config');
 
 let app = new Koa();
 let router = new Router();
 
-let port = 4200;
-
-app.use(authenticate);
+let port = config.application.port;
 
 router.get("/", (ctx, next) => {
     ctx.body = JSON.stringify({status: "Hope is lost"});
@@ -20,4 +18,4 @@ app.listen(port, () => {
     console.log(`Running on port ${port}`);
 });
 
-module.exports = app;
+module.exports = app
