@@ -2,10 +2,7 @@
     "application": {
         "port": 4200
     },
-    "registry-database":{
-
-    },
-    "auth-database":{
-        
+    "database": {
+        "address": "127.0.0.1:27017"
     }
 }
